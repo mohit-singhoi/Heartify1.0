@@ -10,6 +10,11 @@ from sklearn.model_selection import train_test_split
 # Load dataset
 df = pd.read_csv("Dataset/heart_attack_10000.csv")
 
+df.head();
+df.info();
+df.describe();
+df.columns();
+
 FEATURES = [
     'age','sex','cp','trestbps','chol','fbs','restecg',
     'thalach','exang','oldpeak','slope','ca','thal'
