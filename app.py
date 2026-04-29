@@ -26,9 +26,11 @@ FEATURES = [
 # Load model
 with open("model/heart_model.pkl", "rb") as f:
     model = pickle.load(f)
-
+    
+# Load metrics
 with open("model/model_metrics.pkl", "rb") as f:
     metrics = pickle.load(f)
+
 
 
 st.sidebar.header("🧍 Patient Details")

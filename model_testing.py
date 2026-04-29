@@ -3,7 +3,7 @@
 import pandas as pd
 import pickle
 from sklearn.metrics import (
-    accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+    accuracy_score, precision_score, recall_score, f1_score, confusion_matrix  
 )
 from sklearn.model_selection import train_test_split
 
@@ -13,7 +13,7 @@ df = pd.read_csv("Dataset/heart_attack_10000.csv")
 df.head();
 df.info();
 df.describe();
-df.columns();
+print(df.columns)
 
 FEATURES = [
     'age','sex','cp','trestbps','chol','fbs','restecg',

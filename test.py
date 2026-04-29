@@ -1,1 +1,0 @@
-print(" Welcome to Heartify 1.0")
